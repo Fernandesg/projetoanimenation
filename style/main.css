@@ -1,0 +1,109 @@
+:root{
+    --azul: rgb(0, 29, 66);
+    --branco: rgb(255, 255, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--azul);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    /*color: var(--branco);*/
+    color: transparent;
+    background-image: linear-gradient(#00eeb2, #00a2ecab);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: 'Arial Black';
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: rgb(194, 194, 194);
+}
+
+/* Filme principal*/
+
+.anime-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/fundo-naruto.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.anime-principal .sinopse{
+    margin-bottom: 50px;
+   
+}
+
+.titulo{
+    font-size: 40px;
+    margin-top: 10%;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 90px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.anime-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    width: 220 px;
+    
+    
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+}
